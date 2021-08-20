@@ -31,7 +31,7 @@ Plant.create!(
 
 Tag.destroy_all if Rails.env.development?
 
-names = %w(Fruit\ tree Cactus Greasy\ plant Flower Ferns Conifers)
+names = ['Flower', 'Smokeable', 'Edible', 'Algae', 'Moss']
 
 names.each do |name|
   Tag.create!(name: name)
